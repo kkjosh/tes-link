@@ -1,0 +1,235 @@
+body{
+    margin: 0px;
+    
+}
+
+header{
+    display: flex;
+    top:0%;
+    width: 100%;
+    background-color: rgb(154, 105, 31);
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+    color: white;
+    padding: 15px;
+    font-size: larger;
+}
+
+nav a{
+    padding: 10px 25px;
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+}
+
+section.home{
+    background: url("animasi.png");
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    height: 600px;
+    padding-top: 100px;
+    animation: backgroundmove 20s linear infinite;
+}
+
+@keyframes backgroundmove{
+    0%{
+        background-position: 10px 10px;
+    }
+    100%{
+        background-position: 1000px 0;
+    }
+}
+
+section.home div{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin: auto;
+    width: 70%;
+    padding: 50px;
+}
+
+section.home .welcome{
+    font-size: 50px;
+}
+
+section.home a{
+    color: white;
+    padding: 5px 20px;
+    text-decoration: none;
+    box-shadow: 0 0 10px 10px rgb(183, 160, 124);
+    border-radius: 20px;
+    background-color: rgb(154, 105, 31);
+}
+
+section.about{
+    background-color: black;
+    background-size: cover;
+    height: 600px;
+    padding-top: 100px;
+}
+
+section.about div{
+    color: white;
+    text-align: center;
+    margin: auto;
+    width: 70%;
+}
+
+section.about img{
+    height: 300px ;
+}
+
+section.product{
+    background: url("animasi.png");
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    height:1200px;
+    animation: backgroundjalan 20s linear infinite;
+}
+
+@keyframes backgroundjalan{
+    0%{
+        background-position: 100px 10px;
+    }
+    100%{
+        background-position: 1000px 0;
+    }
+}  
+
+.container{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 100px;
+}
+
+.card{
+    background-color: rgb(198, 139, 50);
+    text-align: center;
+    padding: 20px 30px;
+    width: 250px;
+    height: 420px;
+    margin: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 30px;
+    transition: 1s;
+}
+
+.card img{
+    width: 250px;
+    height:220px;
+    object-fit: cover;
+    padding-right: 10px;
+    border-radius: 50px;
+    margin-bottom: 5px;
+}
+
+.card button{
+    cursor: pointer;
+    background-color: rgb(225, 169, 38);
+    width: 100px;
+    height: 25px;
+    border-radius: 15px;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgb(203, 191, 11);
+}
+
+section.contact{
+    background: url("toko.png");
+    background-size: cover;
+    height:600px;
+}
+
+.info{
+    margin: auto;
+    color: white;
+    text-align: center;
+    padding-top: 220px;
+    width: 1200px;
+    font-size: x-large;
+}
+
+
+footer{
+    background-color:  rgb(154, 105, 31);
+    height: 50px;
+}
+
+.medsos{
+    text-align: center;
+    padding-top: 10px;
+    }
+.medsos a{
+    color:white;
+    font-size: 20px;
+    padding: 5px 20px;
+} 
+
+nav a:hover{
+    color: rgb(217, 241, 4);
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section.home div {
+        width: 90%;
+        padding: 20px;
+    }
+
+    section.about {
+        height: auto;
+        padding: 50px 0;
+    }
+
+    section.about div {
+        width: 90%;
+    }
+
+    section.about img {
+        width: 100%;
+        height: auto;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+    }
+
+    .card {
+        width: 90%;
+        height: auto;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .info {
+        width: 90%;
+        padding-top: 100px;
+        font-size: medium;
+    }
+}
